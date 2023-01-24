@@ -35,14 +35,16 @@ body {
   line-height: 1;
 }
 
+header,
+footer {
+  font-family: "Inter", sans-serif;
+  min-width: 100vw;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
-}
-
-header {
   min-width: 100vw;
 }
 
@@ -67,22 +69,24 @@ header {
 }
 
 .btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   background-color: var(--red);
   color: var(--off-white);
   border: none;
   border-radius: 20px;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 198px;
+  right: 220px;
 }
 
 .search-field > input {
   background-color: var(--off-white);
   border: none;
-  padding: 8px;
+  padding: 8px 8px 8px 30px;
 }
 
 .header-bottom {
@@ -132,11 +136,12 @@ header {
 }
 
 .hero-btn {
-  padding: 1em 5em;
+  font-size: 1.5em;
+  padding: 10px 50px;
 }
 
 .welcome-section {
-  padding: 3em;
+  padding: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,12 +150,13 @@ header {
 }
 
 .welcome-title {
-  font-size: 2.75em;
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
 }
 
 .welcome-intro {
+  font-size: 1.5em;
   display: flex;
   gap: 2em;
 }
@@ -160,7 +166,7 @@ header {
   color: var(--off-white);
   display: flex;
   gap: 3em;
-  padding: 3em 2em;
+  padding: 5em;
 }
 
 .event-img {
@@ -187,7 +193,7 @@ header {
 }
 
 .events-info-title {
-  font-size: 2.75rem;
+  font-size: 3em;
   font-weight: 700;
   text-align: center;
   padding-top: 0.25em;
@@ -238,13 +244,13 @@ header {
 .search-btn {
   font-size: 1.5em;
   font-weight: 500;
-  padding: 1em 8em;
+  padding: 10px 50px;
 }
 
 .club-btn {
   font-size: 1.5em;
   font-weight: 500;
-  padding: 1em 7em;
+  padding: 10px 50px;
 }
 
 .search-btn,
@@ -253,7 +259,7 @@ header {
 }
 
 .streams-section {
-  padding: 3em;
+  padding: 5em;
 }
 
 .streams-section-title {
