@@ -217,6 +217,7 @@ footer {
 .card-books-top {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
 }
@@ -238,23 +239,15 @@ footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2em;
-}
-.search-btn {
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 10px 50px;
-}
-
-.club-btn {
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 10px 50px;
 }
 
 .search-btn,
 .club-btn {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 10px 30px;
   width: 440px;
 }
 
@@ -285,4 +278,30 @@ footer {
 
 .copyright {
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .events-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 698px) {
+  .search-field {
+    display: none;
+  }
+  .events-slide-info {
+    bottom: 0px;
+    margin-top: 15px;
+  }
+  .streams-imgs {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 539px) {
+  .search-btn,
+  .club-btn {
+    width: 220px;
+  }
 }
