@@ -1,0 +1,282 @@
+:root {
+  --red: #e63946;
+  --very-dark-blue: #1d3557;
+  --blue: #457b9d;
+  --light-blue: #a8dadc;
+  --off-white: #f1faee;
+  --gray: #efefef;
+  --orange: #ffac33;
+  --green: #208e1e;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+header {
+  min-width: 100vw;
+}
+
+.header-top {
+  background-color: var(--blue);
+  color: var(--off-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+}
+
+.logo {
+  width: 5em;
+}
+
+.header-top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.btn {
+  background-color: var(--red);
+  color: var(--off-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+.search-icon {
+  position: relative;
+  color: var(--blue);
+  right: 198px;
+}
+
+.search-field > input {
+  background-color: var(--off-white);
+  border: none;
+  padding: 8px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  background-color: var(--off-white);
+  color: var(--very-dark-blue);
+  padding: 1em;
+}
+
+.header-bottom-nav {
+  display: flex;
+  gap: 1em;
+}
+
+.hero-section {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/assets/images/hero-image.png) top center no-repeat;
+  background-size: cover;
+  color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  padding: 5em;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  width: 40%;
+  padding: 5em;
+}
+
+.hero-title {
+  font-size: 2.75em;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.hero-content > p {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1;
+}
+
+.hero-btn {
+  padding: 1em 5em;
+}
+
+.welcome-section {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.welcome-title {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.welcome-intro {
+  display: flex;
+  gap: 2em;
+}
+
+.events-section {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  display: flex;
+  gap: 3em;
+  padding: 3em 2em;
+}
+
+.event-img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.event-slide-icons {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
+
+.events-slide-info {
+  position: relative;
+  bottom: 150px;
+  background-color: var(--red);
+  padding: 0.5em;
+}
+
+.events-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.events-info-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 0.25em;
+}
+
+.event-title {
+  font-size: 1.75em;
+  font-weight: 500;
+  padding-bottom: 0.75em;
+}
+
+.card-books-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  padding: 3em;
+}
+
+.card-books-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.card-btn,
+.books-btn {
+  background-color: var(--off-white);
+  color: var(--very-dark-blue);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  padding: 3em;
+  width: 210px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.card-books-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+}
+.search-btn {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 1em 8em;
+}
+
+.club-btn {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 1em 7em;
+}
+
+.search-btn,
+.club-btn {
+  width: 440px;
+}
+
+.streams-section {
+  padding: 3em;
+}
+
+.streams-section-title {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.streams-imgs {
+  display: flex;
+  gap: 1em;
+}
+
+.streams-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: var(--blue);
+  color: var(--off-white);
+  padding: 2em;
+}
+
+.copyright {
+  text-align: center;
+}
