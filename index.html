@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/styles.css?v=3" type="text/css" />
     <script
       src="https://kit.fontawesome.com/c25dbc33a4.js"
       crossorigin="anonymous"
@@ -24,19 +24,21 @@
           <div class="header-top-left">
             <img class="logo" src="/assets/images/logo.png" alt="logo" />
           </div>
+          <i class="fa-solid fa-bars menu-open"></i>
+          <i class="fa-solid fa-xmark menu-close"></i>
           <div class="header-top-right">
             <nav class="header-top-nav">
-              <a href="/index.html">HOME</a>
-              <a href="/signin.html">SIGN IN</a>
+              <a class="menu-item" href="/index.html">HOME</a>
+              <a class="menu-item" href="/signin.html">SIGN IN</a>
               <button
                 type="button"
-                class="btn register-btn"
+                class="btn register-btn menu-item"
                 data-toggle="/register.html"
                 data-target="/register.html"
               >
                 REGISTER
               </button>
-              <div class="search-field">
+              <div class="menu-item search-field">
                 <input type="search" class="search" />
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
               </div>
@@ -45,10 +47,14 @@
         </div>
         <div class="header-bottom">
           <nav class="header-bottom-nav">
-            <a href="/about.html">ABOUT</a>
-            <a href="/account.html">ACCOUNT</a>
-            <a href="#">LOCATION <i class="fa-solid fa-caret-down"></i></a>
-            <a href="#">EVENTS <i class="fa-solid fa-caret-down"></i></a>
+            <a class="menu-item" href="/about.html">ABOUT</a>
+            <a class="menu-item" href="/account.html">ACCOUNT</a>
+            <a class="menu-item" href="#"
+              >LOCATION <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <a class="menu-item" href="#"
+              >EVENTS <i class="fa-solid fa-caret-down"></i
+            ></a>
           </nav>
         </div>
       </header>
@@ -184,5 +190,6 @@
         </p>
       </footer>
     </div>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
