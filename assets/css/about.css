@@ -116,46 +116,11 @@ i.menu-close {
   gap: 1em;
 }
 
-.hero-section {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/assets/images/hero-image.png) top center no-repeat;
-  background-size: cover;
-  color: var(--off-white);
-  display: flex;
-  justify-content: center;
-  padding: 5em;
+.hero-section > img {
+  width: 100%;
 }
 
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5em;
-  width: 40%;
-  padding: 5em;
-}
-
-.hero-title {
-  font-size: 2.75em;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.25;
-}
-
-.hero-content > p {
-  font-size: 2em;
-  text-align: center;
-  line-height: 1;
-}
-
-.hero-btn {
-  font-size: 1.5em;
-  padding: 10px 50px;
-  cursor: pointer;
-}
-
-.welcome-section {
+.mission-section {
   padding: 5em;
   display: flex;
   flex-direction: column;
@@ -164,127 +129,117 @@ i.menu-close {
   gap: 3em;
 }
 
-.welcome-title {
-  font-size: 3em;
+.mission-title {
+  font-size: 2.75em;
   font-weight: 700;
   text-align: center;
 }
 
-.welcome-intro {
-  font-size: 1.5em;
+.mission-descript {
   display: flex;
   gap: 2em;
+  font-size: 1.75em;
 }
 
-.events-section {
+.vision-section {
   background-color: var(--very-dark-blue);
   color: var(--off-white);
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3em;
   padding: 5em;
 }
 
-.event-img {
+.vision-title {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vision-img {
+  flex: 1;
   border-radius: 20px;
   width: 100%;
 }
 
-.event-slide-icons {
-  padding-top: 1em;
-  font-size: 0.75em;
-}
-
-.events-slide-info {
-  position: relative;
-  bottom: 150px;
-  background-color: var(--red);
-  padding: 0.5em;
-}
-
-.events-info {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-}
-
-.events-info-title {
-  font-size: 3em;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 0.25em;
-}
-
-.event-title {
+.vision {
+  flex: 1;
   font-size: 1.75em;
-  font-weight: 500;
-  padding-bottom: 0.75em;
 }
 
-.card-books-section {
+.vision-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5em;
+}
+
+.staff-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 3em;
-  padding: 3em;
-}
-
-.card-books-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-
-.card-btn,
-.books-btn {
-  background-color: var(--off-white);
-  color: var(--very-dark-blue);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border: none;
-  padding: 3em;
-  width: 210px;
-  border-radius: 20px;
-  font-size: 1.5em;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.card-books-bottom {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
-}
-
-.search-btn,
-.club-btn {
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 10px 30px;
-  width: 440px;
-  cursor: pointer;
-}
-
-.streams-section {
   padding: 5em;
 }
 
-.streams-section-title {
-  font-size: 2em;
-  padding-bottom: 1em;
+.staff-title {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-align: center;
 }
 
-.streams-imgs {
+.staff-card-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
 }
 
-.streams-img {
-  width: 100%;
+.left-arrow,
+.right-arrow {
+  font-size: 5em;
+  color: var(--blue);
+}
+
+.staff-card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  width: 60%;
+}
+
+.staff-card-img {
+  flex: 1;
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.staff-card-info {
+  flex: 1;
+  /* font-size: 1.75em; */
+}
+.staff-name {
+  font-size: 2em;
+  font-weight: 700;
+}
+.staff-position {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.staff-descript {
+  font-size: 1.5em;
+  padding: 2em 2em 0 0;
+}
+
+.card-slide-icons {
+  font-size: 1em;
+  color: var(--blue);
 }
 
 footer {
