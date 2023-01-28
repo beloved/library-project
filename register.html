@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/register.css?v=3"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c25dbc33a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Crazy Town Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-top">
+          <div class="header-top-left">
+            <img class="logo" src="/assets/images/logo.png" alt="logo" />
+          </div>
+          <i class="fa-solid fa-bars menu-open"></i>
+          <i class="fa-solid fa-xmark menu-close"></i>
+          <div class="header-top-right">
+            <nav class="header-top-nav">
+              <a class="menu-item" href="/index.html">HOME</a>
+              <a class="menu-item" href="/signin.html">SIGN IN</a>
+              <button
+                type="button"
+                class="btn register-btn menu-item"
+                data-toggle="/register.html"
+                data-target="/register.html"
+              >
+                REGISTER
+              </button>
+              <div class="menu-item search-field">
+                <input type="search" class="search" />
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-bottom-nav">
+            <a class="menu-item" href="/about.html">ABOUT</a>
+            <a class="menu-item" href="/account.html">ACCOUNT</a>
+            <a class="menu-item" href="#"
+              >LOCATION <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <a class="menu-item" href="#"
+              >EVENTS <i class="fa-solid fa-caret-down"></i
+            ></a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero-section">
+          <div class="hero-content">
+            <img class="logo" src="/assets/images/logo.png" alt="logo" />
+            <h2>Explore today, discover tomorrow.</h2>
+            <h1>REGISTER TODAY</h1>
+          </div>
+        </section>
+        <section class="form-container">
+          <form action="">
+            <h3>Your Information</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" />
+              </div>
+              <div class="input-group">
+                <label for="lastName">LastName</label>
+                <input type="text" name="lasstName" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="age">Age</label>
+                <input type="text" name="age" />
+              </div>
+              <div class="input-group">
+                <label for="student">Student</label>
+                <input type="text" name="student" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="parent">Parent/Guardian</label>
+                <input type="text" name="parent" />
+              </div>
+            </div>
+            <h3>Adress</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" />
+              </div>
+              <div class="input-group">
+                <label for="city-state-zip">City, State, Zip</label>
+                <input type="text" name="city-state-zip" />
+              </div>
+            </div>
+            <h3>Choose Your Password</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" />
+                <p>Password strength:</p>
+              </div>
+              <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" />
+              </div>
+            </div>
+            <div class="password-requires">
+              <p>Must Contain</p>
+              <br />
+              <p>8 Characters minimum</p>
+              <p>Must contain one special character</p>
+              <p>One Uppercase Letter</p>
+            </div>
+            <hr />
+            <div class="form-confirm">
+              <input type="checkbox" name="checkbox" />
+              <label for="checkbox"
+                >I confirm that I have read and agree to the
+                <a href="#">terms of service</a>.</label
+              >
+              <button class="btn register-btn">REGISTER</button>
+              <!-- <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" />
+                  <p>Password strength:</p>
+                </div>
+                <div class="input-group">
+                  <label for="confirm-password">City, State, Zip</label>
+                  <input type="password" name="confirm-password" />
+                </div> -->
+            </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p class="copyright">
+          COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
+        </p>
+      </footer>
+    </div>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
