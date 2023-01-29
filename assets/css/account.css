@@ -123,7 +123,7 @@ i.menu-close {
       rgba(29, 53, 87, 0.85),
       rgba(29, 53, 87, 0.85)
     ),
-    url(assets/images/register.png) top center no-repeat;
+    url(/assets/images/register.png) top center no-repeat;
   background-size: cover;
   color: var(--off-white);
   display: flex;
