@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/account.css?v=3" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/c25dbc33a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Crazy Town Library - Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-top">
+          <div class="header-top-left">
+            <img class="logo" src="/assets/images/logo.png" alt="logo" />
+          </div>
+          <i class="fa-solid fa-bars menu-open"></i>
+          <i class="fa-solid fa-xmark menu-close"></i>
+          <div class="header-top-right">
+            <nav class="header-top-nav">
+              <a class="menu-item" href="/index.html">HOME</a>
+              <a class="menu-item" href="/signin.html">SIGN IN</a>
+              <button
+                type="button"
+                class="btn register-btn menu-item"
+                data-toggle="/register.html"
+                data-target="/register.html"
+              >
+                REGISTER
+              </button>
+              <div class="menu-item search-field">
+                <input type="search" class="search" />
+                <i class="search-icon fa-solid fa-magnifying-glass"></i>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-bottom-nav">
+            <a class="menu-item" href="/about.html">ABOUT</a>
+            <a class="menu-item" href="/account.html">ACCOUNT</a>
+            <a class="menu-item" href="#"
+              >LOCATION <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <a class="menu-item" href="#"
+              >EVENTS <i class="fa-solid fa-caret-down"></i
+            ></a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero-section">
+          <div class="hero-content">
+            <img class="logo" src="/assets/images/logo.png" alt="logo" />
+            <h2>Explore today, discover tomorrow.</h2>
+            <h1>REGISTER TODAY</h1>
+          </div>
+        </section>
+        <section class="form-container">
+          <form action="">
+            <h3>Your Information</h3>
+            <p class="edit-icon">EDIT <i class="fa-solid fa-user-pen"></i></p>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" />
+              </div>
+              <div class="input-group">
+                <label for="lastName">LastName</label>
+                <input type="text" name="lasstName" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" />
+              </div>
+              <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="age">Age</label>
+                <input type="text" name="age" />
+              </div>
+              <div class="input-group">
+                <label for="student">Student</label>
+                <input type="text" name="student" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="parent">Parent/Guardian</label>
+                <input type="text" name="parent" />
+              </div>
+            </div>
+            <h3>Address</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" name="address" />
+              </div>
+              <div class="input-group">
+                <label for="city-state-zip">City, State, Zip</label>
+                <input type="text" name="city-state-zip" />
+              </div>
+            </div>
+            <h3>Choose Your Password</h3>
+            <div class="form-row">
+              <div class="form-col-left">
+                <div class="input-group">
+                  <label for="old-password">Old Password</label>
+                  <input type="password" name="old-password" />
+                </div>
+                <div class="input-group">
+                  <label for="new-password">New Password</label>
+                  <input type="password" name="new-password" />
+                </div>
+                <div class="input-group">
+                  <label for="confirm-new-password">Confirm New Password</label>
+                  <input type="password" name="confirm-new-password" />
+                </div>
+              </div>
+              <div class="form-col-right">
+                <div class="password-requires">
+                  <p>Password strength:</p>
+                  <br />
+                  <p>Must Contain</p>
+                  <br />
+                  <p>8 Characters minimum</p>
+                  <p>Must contain one special character</p>
+                  <p>One Uppercase Letter</p>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="form-confirm">
+              <input type="checkbox" name="checkbox" />
+              <label for="checkbox"
+                >I confirm that I have read and agree to the
+                <a href="#">terms of service</a>.</label
+              >
+              <button class="btn save-btn">SAVE</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-history-section">
+          <h2 class="checkout-history-section-title">CHECKOUT HISTORY</h2>
+          <div class="checkout-history-section-content">
+            <div class="checkout-history-info">
+              <img
+                class="checkout-history-img"
+                src="/assets/images/checkout-fav.png"
+              />
+              <div class="checkout-history-title">
+                <h3>TITLE:</h3>
+                <p class="checkout-history-title">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div class="checkout-history-info-author">
+                <h3>AUTHOR:</h3>
+                <p class="checkout-history-author">Lorem ipsum</p>
+              </div>
+              <div class="checkout-history-rating">
+                <h3>REVIEWS:</h3>
+                <div class="review-stars">
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="checkout-history-rating">
+                <h3>RATINGS:</h3>
+                <p class="ratings">95</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="favorite-books-section">
+          <h2 class="favorite-books-section-title">FAVORITE BOOKS</h2>
+          <div class="favorite-books-section-content">
+            <div class="favorite-books-info">
+              <img
+                class="favorite-books-img"
+                src="/assets/images/checkout-fav.png"
+              />
+              <div class="favorite-books-title">
+                <h3>TITLE:</h3>
+                <p class="favorite-books-title">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+              <div class="favorite-books-info-author">
+                <h3>AUTHOR:</h3>
+                <p class="favorite-books-author">Lorem ipsum</p>
+              </div>
+              <div class="favorite-books-reviews">
+                <h3>REVIEWS:</h3>
+                <div class="review-stars">
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                  <i class="rating-star fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="favorite-books-rating">
+                <h3>RATINGS:</h3>
+                <p class="ratings">95</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p class="copyright">
+          COPYRIGHT © 2023 CRAZY TOWN LIBRARY. ALL RIGHTS RESERVED
+        </p>
+      </footer>
+    </div>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
