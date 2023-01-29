@@ -118,7 +118,7 @@ i.menu-close {
 
 .hero-section {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/assets/images/hero-image.png) top center no-repeat;
+    url(assets/images/hero-image.png) top center no-repeat;
   background-size: cover;
   color: var(--off-white);
   display: flex;
