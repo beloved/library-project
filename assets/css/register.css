@@ -158,10 +158,19 @@ i.menu-close {
   align-items: center;
   padding: 3em;
 }
+
+.account-check {
+  align-self: flex-end;
+}
+
+.account-login {
+  color: var(--blue);
+}
+
 form {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+
   justify-content: flex-start;
   gap: 1em;
 }

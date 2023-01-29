@@ -164,11 +164,8 @@ main {
   gap: 1em;
   padding: 5em;
   font-size: 1.5em;
-
-  /* border-top: solid 1px var(--dark-gray);
-  border-right: solid 1px var(--dark-gray); */
-  /* border-radius: 0 15px 0 0; */
 }
+
 .book-descript-nav-item > i {
   font-size: 2em;
   width: 50px;

@@ -242,31 +242,13 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .events-section {
-    flex-wrap: wrap;
-  }
-}
-
 @media (max-width: 698px) {
   .search-field {
     display: none;
   }
-  .events-slide-info {
-    bottom: 0px;
-    margin-top: 15px;
-  }
-  .streams-imgs {
-    flex-wrap: wrap;
-  }
 }
 
 @media (max-width: 539px) {
-  .search-btn,
-  .club-btn {
-    width: 220px;
-  }
-
   .header-top,
   .header-top-nav,
   .header-bottom,
