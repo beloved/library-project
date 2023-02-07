@@ -62,7 +62,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 2em;
+  padding: 0.5vw 2vw;
 }
 
 .logo {
@@ -78,7 +78,7 @@ i.menu-close {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1em;
+  gap: 1vw;
 }
 
 .btn {
@@ -94,7 +94,7 @@ i.menu-close {
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 220px;
+  right: 88%;
 }
 
 .search-field > input {
@@ -108,12 +108,12 @@ i.menu-close {
   justify-content: center;
   background-color: var(--off-white);
   color: var(--very-dark-blue);
-  padding: 1em;
+  padding: 1vw;
 }
 
 .header-bottom-nav {
   display: flex;
-  gap: 1em;
+  gap: 1vw;
 }
 
 .hero-section {
@@ -123,7 +123,7 @@ i.menu-close {
   color: var(--off-white);
   display: flex;
   justify-content: center;
-  padding: 5em;
+  padding: 5vw;
 }
 
 .hero-content {
@@ -131,57 +131,73 @@ i.menu-close {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
+  gap: 1.5vw;
   width: 40%;
-  padding: 5em;
+  padding: 5vw;
 }
 
 .hero-title {
-  font-size: 2.75em;
+  font-size: 2.75vw;
   font-weight: 800;
   text-align: center;
   line-height: 1.25;
 }
 
 .hero-content > p {
-  font-size: 2em;
+  font-size: 2vw;
   text-align: center;
   line-height: 1;
 }
 
 .hero-btn {
-  font-size: 1.5em;
-  padding: 10px 50px;
+  font-size: 1.5vw;
+  padding: 10px 30px;
   cursor: pointer;
 }
 
 .welcome-section {
-  padding: 5em;
+  padding: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 3vw;
 }
 
 .welcome-title {
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: 700;
   text-align: center;
 }
 
 .welcome-intro {
-  font-size: 1.5em;
+  font-size: 1.5vw;
   display: flex;
-  gap: 2em;
+  justify-content: space-evenly;
+  gap: 2vw;
+}
+.read-welcome-1,
+.read-welcome-2 {
+  flex: 1;
+}
+
+.ellipsis-1,
+.ellipsis-2 {
+  display: inline;
+}
+
+.read-more-1,
+.read-more-2 {
+  display: none;
 }
 
 .events-section {
   background-color: var(--very-dark-blue);
   color: var(--off-white);
   display: flex;
-  gap: 3em;
-  padding: 5em;
+  gap: 3vw;
+  padding: 5vw;
+  margin-bottom: 5vw;
 }
 
 .event-img {
@@ -190,34 +206,34 @@ i.menu-close {
 }
 
 .event-slide-icons {
-  padding-top: 1em;
-  font-size: 0.75em;
+  padding-top: 1vw;
+  font-size: 0.75vw;
 }
 
 .events-slide-info {
   position: relative;
   bottom: 150px;
   background-color: var(--red);
-  padding: 0.5em;
+  padding: 0.5vw;
 }
 
 .events-info {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 3vw;
 }
 
 .events-info-title {
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: 700;
   text-align: center;
-  padding-top: 0.25em;
+  padding-top: 0.25vw;
 }
 
 .event-title {
-  font-size: 1.75em;
+  font-size: 1.75vw;
   font-weight: 500;
-  padding-bottom: 0.75em;
+  padding-bottom: 0.75vw;
 }
 
 .card-books-section {
@@ -225,8 +241,8 @@ i.menu-close {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
-  padding: 3em;
+  gap: 3vw;
+  padding: 3vw;
 }
 
 .card-books-top {
@@ -234,7 +250,7 @@ i.menu-close {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 2vw;
 }
 
 .card-btn,
@@ -256,7 +272,7 @@ i.menu-close {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2em;
+  gap: 2vw;
 }
 
 .search-btn,
@@ -269,28 +285,34 @@ i.menu-close {
 }
 
 .streams-section {
-  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw;
 }
 
 .streams-section-title {
-  font-size: 2em;
+  font-size: 3vw;
   padding-bottom: 1em;
 }
 
 .streams-imgs {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
 }
 
 .streams-img {
-  width: 100%;
+  flex: 1;
+  width: 25%;
   border-radius: 20px;
 }
 
 footer {
   background-color: var(--blue);
   color: var(--off-white);
-  padding: 2em;
+  padding: 2vw;
 }
 
 .copyright {
@@ -303,25 +325,42 @@ footer {
   }
 }
 
-@media (max-width: 698px) {
+@media (max-width: 768px) {
   .search-field {
     display: none;
   }
+  .welcome-intro {
+    font-size: 2vw;
+  }
+
   .events-slide-info {
     bottom: 0px;
     margin-top: 15px;
   }
+
+  .card-btn,
+  .books-btn {
+    width: 100px;
+    padding: 3em 1em;
+    font-size: 0.75em;
+  }
+
+  .search-btn,
+  .club-btn {
+    width: 200px;
+    font-size: 1em;
+  }
+
   .streams-imgs {
     flex-wrap: wrap;
   }
+
+  .streams-img {
+    width: 40%;
+  }
 }
 
-@media (max-width: 539px) {
-  .search-btn,
-  .club-btn {
-    width: 220px;
-  }
-
+@media (max-width: 640px) {
   .header-top,
   .header-top-nav,
   .header-bottom,
@@ -358,5 +397,40 @@ footer {
 
   i.menu-close {
     display: none;
+  }
+  .hero-content {
+    width: 60%;
+  }
+  .hero-title {
+    font-size: 3.5vw;
+  }
+
+  .hero-content > p {
+    font-size: 3vw;
+  }
+
+  .hero-btn {
+    font-size: 2vw;
+  }
+  .welcome-title {
+    font-size: 4vw;
+  }
+
+  .welcome-intro {
+    flex-direction: column;
+    font-size: 3.5vw;
+    padding: 5vw;
+    gap: 5vw;
+  }
+  .events-info-title {
+    font-size: 4vw;
+  }
+  .events-section {
+    padding: 10vw;
+  }
+
+  .event-title {
+    font-size: 1em;
+    font-weight: 700;
   }
 }
