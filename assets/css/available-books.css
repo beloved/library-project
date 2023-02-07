@@ -95,7 +95,7 @@ i.menu-close {
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 220px;
+  right: 88%;
 }
 
 .search-field > input {
