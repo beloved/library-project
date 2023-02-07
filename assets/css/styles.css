@@ -62,7 +62,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5vw 2vw;
+  padding: 0.5em 2em;
 }
 
 .logo {
@@ -78,7 +78,7 @@ i.menu-close {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1vw;
+  gap: 1em;
 }
 
 .btn {
@@ -108,12 +108,12 @@ i.menu-close {
   justify-content: center;
   background-color: var(--off-white);
   color: var(--very-dark-blue);
-  padding: 1vw;
+  padding: 1em;
 }
 
 .header-bottom-nav {
   display: flex;
-  gap: 1vw;
+  gap: 1em;
 }
 
 .hero-section {
@@ -312,7 +312,7 @@ i.menu-close {
 footer {
   background-color: var(--blue);
   color: var(--off-white);
-  padding: 2vw;
+  padding: 2em;
 }
 
 .copyright {
