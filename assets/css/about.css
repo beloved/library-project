@@ -122,24 +122,24 @@ i.menu-close {
 }
 
 .mission-section {
-  padding: 5em;
+  padding: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 3vw;
 }
 
 .mission-title {
-  font-size: 2.75em;
+  font-size: 2.75vw;
   font-weight: 700;
   text-align: center;
 }
 
 .mission-descript {
   display: flex;
-  gap: 2em;
-  font-size: 1.75em;
+  gap: 2vw;
+  font-size: 1.75vw;
 }
 
 .vision-section {
@@ -148,12 +148,12 @@ i.menu-close {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3em;
-  padding: 5em;
+  gap: 3vw;
+  padding: 5vw;
 }
 
 .vision-title {
-  font-size: 2.75em;
+  font-size: 2.75vw;
   font-weight: 700;
   text-align: center;
 }
@@ -161,19 +161,19 @@ i.menu-close {
 .vision-img {
   flex: 1;
   border-radius: 20px;
-  width: 100%;
+  width: 50%;
 }
 
 .vision {
   flex: 1;
-  font-size: 1.75em;
+  font-size: 1.75vw;
 }
 
 .vision-info {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5em;
+  gap: 5vw;
 }
 
 .staff-section {
@@ -181,12 +181,12 @@ i.menu-close {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3em;
-  padding: 5em;
+  gap: 3vw;
+  padding: 5vw;
 }
 
 .staff-title {
-  font-size: 2.75em;
+  font-size: 2.75vw;
   font-weight: 700;
   text-align: center;
 }
@@ -195,12 +195,12 @@ i.menu-close {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 1vw;
 }
 
 .left-arrow,
 .right-arrow {
-  font-size: 5em;
+  font-size: 5vw;
   color: var(--blue);
 }
 
@@ -208,7 +208,7 @@ i.menu-close {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 3em;
+  gap: 3vw;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   width: 60%;
@@ -216,7 +216,7 @@ i.menu-close {
 
 .staff-card-img {
   flex: 1;
-  width: 100%;
+  width: 50%;
   border-radius: 20px 0 0 20px;
 }
 
@@ -225,21 +225,21 @@ i.menu-close {
   /* font-size: 1.75em; */
 }
 .staff-name {
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: 700;
 }
 .staff-position {
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: 400;
 }
 
 .staff-descript {
-  font-size: 1.5em;
-  padding: 2em 2em 0 0;
+  font-size: 1.5vw;
+  padding: 2vw 2vw 0 0;
 }
 
 .card-slide-icons {
-  font-size: 1em;
+  font-size: 1vw;
   color: var(--blue);
 }
 
@@ -256,6 +256,23 @@ footer {
 @media (max-width: 698px) {
   .search-field {
     display: none;
+  }
+  .mission-descript {
+    font-size: 2.75vw;
+  }
+  .vision {
+    font-size: 2vw;
+  }
+
+  .staff-card {
+    width: 100%;
+  }
+  .staff-name {
+    font-size: 3vw;
+  }
+  .staff-position,
+  .staff-descript {
+    font-size: 2.5vw;
   }
 }
 
@@ -296,5 +313,28 @@ footer {
 
   i.menu-close {
     display: none;
+  }
+  .mission-title,
+  .vision-title,
+  .staff-title {
+    font-size: 4vw;
+  }
+
+  .mission-section,
+  .vision-section {
+    padding: 5vw 10vw;
+  }
+
+  .mission-descript,
+  .vision-info {
+    flex-direction: column;
+  }
+
+  .mission-descript,
+  .vision {
+    font-size: 3.5vw;
+  }
+  .vision-img {
+    width: 100%;
   }
 }
