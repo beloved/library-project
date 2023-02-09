@@ -88,7 +88,7 @@ i.menu-close {
   color: var(--off-white);
   border: none;
   border-radius: 20px;
-  padding: 5px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 .search-icon {
