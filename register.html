@@ -30,9 +30,9 @@
             <nav class="header-top-nav">
               <a class="menu-item" href="index.html">HOME</a>
               <a class="menu-item" href="signin.html">SIGN IN</a>
-              <button href="register.html" type="button" class="btn menu-item">
-                REGISTER
-              </button>
+              <a href="register.html">
+                <button type="button" class="btn menu-item">REGISTER</button>
+              </a>
               <div class="menu-item search-field">
                 <input type="search" class="search" />
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
@@ -135,11 +135,13 @@
             </div>
             <hr />
             <div class="form-confirm">
-              <input type="checkbox" name="checkbox" />
-              <label for="checkbox"
-                >I confirm that I have read and agree to the
-                <a href="#">terms of service</a>.</label
-              >
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox"
+                  >I confirm that I have read and agree to the
+                  <a href="#">terms of service</a>.</label
+                >
+              </div>
               <button class="btn register-btn">REGISTER</button>
             </div>
           </form>

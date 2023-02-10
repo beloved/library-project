@@ -30,13 +30,11 @@
             <nav class="header-top-nav">
               <a class="menu-item" href="index.html">HOME</a>
               <a class="menu-item" href="signin.html">SIGN IN</a>
-              <button
-                href="register.html"
-                type="button"
-                class="btn register-btn menu-item"
-              >
-                REGISTER
-              </button>
+              <a href="register.html">
+                <button type="button" class="btn register-btn menu-item">
+                  REGISTER
+                </button>
+              </a>
               <div class="menu-item search-field">
                 <input type="search" class="search" />
                 <i class="search-icon fa-solid fa-magnifying-glass"></i>
@@ -62,7 +60,7 @@
           <div class="hero-content">
             <img class="logo" src="assets/images/logo.png" alt="logo" />
             <h2>Explore today, discover tomorrow.</h2>
-            <h1>REGISTER TODAY</h1>
+            <h2>Read every day</h2>
           </div>
         </section>
         <section class="form-container">
@@ -117,7 +115,7 @@
               </div>
             </div>
             <h3>Choose Your Password</h3>
-            <div class="form-row">
+            <div class="form-row password-section">
               <div class="form-col-left">
                 <div class="input-group">
                   <label for="old-password">Old Password</label>
@@ -146,11 +144,13 @@
             </div>
             <hr />
             <div class="form-confirm">
-              <input type="checkbox" name="checkbox" />
-              <label for="checkbox"
-                >I confirm that I have read and agree to the
-                <a href="#">terms of service</a>.</label
-              >
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox"
+                  >I confirm that I have read and agree to the
+                  <a href="#">terms of service</a>.</label
+                >
+              </div>
               <button class="btn save-btn">SAVE</button>
             </div>
           </form>

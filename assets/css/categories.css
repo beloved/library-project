@@ -89,13 +89,13 @@ i.menu-close {
   color: var(--off-white);
   border: none;
   border-radius: 20px;
-  padding: 5px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 220px;
+  right: 88%;
 }
 
 .search-field > input {
@@ -131,7 +131,7 @@ main {
   margin-top: 3em;
 }
 .search-section-input {
-  padding: 1em 40em 1em 1em;
+  padding: 1em 40vw 1em 1em;
 }
 
 .icon-placeholder {
@@ -142,13 +142,14 @@ main {
   position: relative;
   right: 15%;
   color: var(--blue);
+  margin-right: -72px;
 }
 
 .favorites-section,
 .movies-section,
 .arrivals-section,
 .resources-section {
-  padding: 2em 5em;
+  padding: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,10 +242,39 @@ footer {
 .copyright {
   text-align: center;
 }
+@media (max-width: 1440px) {
+  .icon-placeholder {
+    right: 20%;
+  }
+}
+
+@media (max-width: 850px) {
+  .icon-placeholder > p {
+    font-size: 0.75em;
+  }
+
+  .favorites-section-title,
+  .movies-section-title,
+  .arrivals-section-title,
+  .resources-section-title {
+    font-size: 5vw;
+  }
+
+  .favorites-section-content,
+  .movies-section-content,
+  .arrivals-section-content,
+  .resources-section-content {
+    flex-wrap: wrap;
+  }
+}
 
 @media (max-width: 698px) {
   .search-field {
     display: none;
+  }
+
+  .icon-placeholder > p {
+    font-size: 0.7em;
   }
 }
 
@@ -285,5 +315,9 @@ footer {
 
   i.menu-close {
     display: none;
+  }
+
+  .icon-placeholder {
+    right: 28%;
   }
 }

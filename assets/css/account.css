@@ -89,13 +89,13 @@ i.menu-close {
   color: var(--off-white);
   border: none;
   border-radius: 20px;
-  padding: 5px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 220px;
+  right: 88%;
 }
 
 .search-field > input {
@@ -140,15 +140,8 @@ i.menu-close {
   padding: 5em;
 }
 
-.hero-content > h1 {
-  font-size: 2.75em;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.25;
-}
-
 .hero-content > h2 {
-  font-size: 2em;
+  font-size: 2vw;
   text-align: center;
   line-height: 1;
 }
@@ -161,7 +154,6 @@ i.menu-close {
 form {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: flex-start;
   gap: 1em;
 }
@@ -189,6 +181,10 @@ input {
   padding: 1em 6em;
 }
 
+.form-col-left {
+  gap: 1.5em;
+}
+
 .form-col-right {
   align-self: flex-end;
 }
@@ -208,7 +204,7 @@ hr {
 }
 .favorite-books-section,
 .checkout-history-section {
-  padding: 5em 5em;
+  padding: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,6 +253,31 @@ footer {
 .copyright {
   text-align: center;
 }
+@media (max-width: 850px) {
+  .form-row,
+  .password-section,
+  .form-confirm {
+    flex-direction: column;
+  }
+
+  .form-col-right {
+    align-self: flex-start;
+  }
+
+  .save-btn {
+    margin-left: 0;
+  }
+  .favorite-books-section-title,
+  .checkout-history-section-title {
+    font-size: 5vw;
+  }
+
+  .favorite-books-info,
+  .checkout-history-info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 
 @media (max-width: 698px) {
   .search-field {
@@ -301,5 +322,14 @@ footer {
 
   i.menu-close {
     display: none;
+  }
+
+  .hero-content > h2 {
+    font-size: 4vw;
+  }
+
+  .favorite-books-info,
+  .checkout-history-info {
+    gap: 2em;
   }
 }

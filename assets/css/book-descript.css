@@ -89,13 +89,13 @@ i.menu-close {
   color: var(--off-white);
   border: none;
   border-radius: 20px;
-  padding: 5px 30px;
+  padding: 10px 30px;
   cursor: pointer;
 }
 .search-icon {
   position: relative;
   color: var(--blue);
-  right: 220px;
+  right: 88%;
 }
 
 .search-field > input {
@@ -131,29 +131,31 @@ main {
   margin-top: 3em;
 }
 .search-section-input {
-  padding: 1em 40em 1em 1em;
+  padding: 1em 40vw 1em 1em;
 }
 
 .icon-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 1vw;
   position: relative;
   right: 15%;
   color: var(--blue);
+  margin-right: -72px;
 }
 
 .book-descript-page-title {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .book-descript-page-content {
   display: flex;
   align-items: flex-start;
+  /* justify-content: center; */
   gap: 1em;
 }
 .book-descript-nav {
@@ -162,7 +164,7 @@ main {
   align-items: flex-start;
   justify-content: stretch;
   gap: 1em;
-  padding: 5em;
+  padding: 3em;
   font-size: 1.5em;
 }
 
@@ -180,7 +182,7 @@ main {
 .book-descript {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 90%;
   gap: 3em;
   padding: 5em;
   border: solid 1px var(--dark-gray);
@@ -256,7 +258,7 @@ hr {
 
 .review-card-img {
   flex: 1;
-  width: 100%;
+  width: 50%;
   border-radius: 20px 0 0 20px;
 }
 
@@ -274,7 +276,6 @@ hr {
 }
 
 .card-slide-icons {
-  /* font-size: 1em; */
   color: var(--blue);
 }
 
@@ -296,9 +297,64 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  .icon-placeholder {
+    right: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .book-descript {
+    padding: 2em;
+  }
+  .book-descript-info {
+    flex-direction: column-reverse;
+    gap: 1em;
+  }
+  .book-descript-right {
+    gap: 1em;
+    align-self: center;
+  }
+
+  .check-out-btn {
+    width: 160px;
+  }
+
+  .review-card {
+    flex-direction: column;
+  }
+
+  .review-card-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .review-card-info {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 850px) {
+  .icon-placeholder > p {
+    font-size: 0.75em;
+  }
+
+  .book-descript-page-title {
+    font-size: 5vw;
+  }
+  .book-descript-page-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
 @media (max-width: 698px) {
   .search-field {
     display: none;
+  }
+
+  .icon-placeholder > p {
+    font-size: 0.7em;
   }
 }
 
@@ -339,5 +395,14 @@ footer {
 
   i.menu-close {
     display: none;
+  }
+
+  .icon-placeholder {
+    right: 28%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
   }
 }
