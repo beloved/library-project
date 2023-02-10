@@ -132,7 +132,7 @@ dialog {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 110;
-  padding: 2em 4em 3em 4em;
+  padding: 2vw 4vw 3vw 4vw;
   border-radius: 10px;
 }
 .modal::backdrop {
@@ -143,7 +143,7 @@ dialog {
 .filter {
   display: flex;
   flex-direction: column;
-  padding: 1em 7em;
+  padding: 1vw 7vw;
   border: 1px solid var(--light-blue);
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
