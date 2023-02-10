@@ -328,4 +328,9 @@ footer {
   .hero-content > h2 {
     font-size: 4vw;
   }
+
+  .favorite-books-info,
+  .checkout-history-info {
+    gap: 2em;
+  }
 }
