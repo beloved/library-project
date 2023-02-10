@@ -140,13 +140,6 @@ i.menu-close {
   padding: 5em;
 }
 
-.hero-content > h1 {
-  font-size: 2.75vw;
-  font-weight: 800;
-  text-align: center;
-  line-height: 1.25;
-}
-
 .hero-content > h2 {
   font-size: 2vw;
   text-align: center;
@@ -331,9 +324,8 @@ footer {
   i.menu-close {
     display: none;
   }
-  .hero-content > h1 {
-    font-size: 6vw;
-  }
+
   .hero-content > h2 {
     font-size: 4vw;
+  }
 }
